@@ -23,3 +23,4 @@ main screen is hidden but renders the control menu, which is a list of
 configurable actions (delivered from host) plus access to a diagnostic
 dump from the etcd3 server.
 
+See https://www.waveshare.com/Pico-CapTouch-ePaper-2.9.htm and https://www.waveshare.com/wiki/Pico-CapTouch-ePaper-2.9.
