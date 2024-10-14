@@ -9,8 +9,8 @@ hot tub controller and this is the outside wall interface (there is also a http 
 for the high contrast, not for power saving. The unit is mounted in a 2 gang faceplate matching that of the
 build.
 
-![Display 1](display_1.jpg)
-![Display 2](display_2.jpg)
+![Display 1](pico_display_1.jpg)
+![Display 2](pico_display_2.jpg)
 
 Install `Pico SDK` in `~/third_party` directory and the rest
 should be straight forward `CMake` process (with `make install` using `picotool` to automatically upload the image). 
@@ -18,6 +18,8 @@ The host system components are in the `system` directory, with as `test.js` as a
 and `main.js` as the production interface. Run the test interface as `while [ true ]; do node -d -c config.ini test.js; done`
 as the `/dev/pico` device will disappear once `picotool` puts into `BOOTSEL` mode. This has the benefit
 of reloading `test.js` for any host side changes.
+
+![Display 2](pico_server.jpg)
 
 Note the LED is wired to `GPIO 14` to provide a visible blinking indication that
 a warning message needs to be read, which is done so by tapping
