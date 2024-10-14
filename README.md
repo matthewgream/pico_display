@@ -32,8 +32,8 @@ confirmed once reflected back from the host, thus modes and settings
 and controls are enforced in the host. The `Pico` has an internal 
 temperature sensor which is also sampled and downloaded to the host.
 
-This particular Waveshare device was chosen because it has a touch interface, is an approprtiat size, has a protective
-screen layer, is built for the Pico, and has a fast partial refresh rate (3 seconds) with low ghosting. The four physical
-buttons are not used.
+This particular Waveshare device was chosen because it has a touch interface, is an approprtiate size, has a protective
+screen layer, is built for the Pico, and has a fast partial refresh rate (3 seconds) with low ghosting. The physical
+buttons are not used (there are four: three are usable, the fourth is tied to reset).
 
 See https://www.waveshare.com/Pico-CapTouch-ePaper-2.9.htm and https://www.waveshare.com/wiki/Pico-CapTouch-ePaper-2.9.
