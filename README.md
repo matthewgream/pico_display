@@ -8,7 +8,8 @@ server for inter component communication. The system is a proprietary
 hot tub controller and this is the external interface. ePaper was chosen
 for the high contrast, not for power saving.
 
-![Display](display.jpg)
+![Display 1](display_1.jpg)
+![Display 2](display_2.jpg)
 
 You need to install PICO SDK in ~/third_party directory and the rest
 should be straight forward. The host system components are in the `system`
