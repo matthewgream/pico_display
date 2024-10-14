@@ -1,0 +1,4 @@
+firmware/build
+firmware/tools
+node_modules
+package-lock.json

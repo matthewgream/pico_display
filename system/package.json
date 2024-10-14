@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "posix-getopt": "^1.2.1",
+    "serialport": "^12.0.0",
+    "etcd3": "^1.1.2",
+    "syslog": "^0.1.1-1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

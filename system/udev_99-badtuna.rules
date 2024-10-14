@@ -1,0 +1,14 @@
+# /etc/udev/rules.d/99-badtuna.rules
+
+# Make an RP2040 in BOOTSEL mode writable by all users, so you can `picotool` without `sudo`. 
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0003", MODE="666" GROUP="plugdev"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000a", MODE="666" GROUP="plugdev"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000a", SYMLINK+="pico"
+
+# Do the same for the PZEM-017 voltage monitoring device
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE="666" GROUP="plugdev"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE="666" GROUP="plugdev"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="pzem017"
+
